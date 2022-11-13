@@ -1,0 +1,94 @@
+.infos {
+  display: none;
+}
+
+.imagenCabecera {
+  height: 5em;
+}
+.imagenCabecera #navbarScroll > ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.imagenCabecera img,
+.imagenCabecera button,
+.imagenCabecera button > i {
+  height: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.imagenCabecera li {
+  margin: 0 0.4em;
+}
+.imagenCabecera li a {
+  color: white;
+}
+.imagenCabecera li a i {
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .imagenCabecera #navbarScroll > ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .infos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .infoContacto,
+.acceso {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .acceso {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .acceso i {
+    margin: 0 0.5em;
+  }
+}

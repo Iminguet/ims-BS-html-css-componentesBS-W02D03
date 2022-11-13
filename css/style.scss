@@ -1,0 +1,67 @@
+.infos {
+  display: none;
+}
+
+.imagenCabecera {
+  height: 5em;
+  #navbarScroll > ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  img,
+  button,
+  button > i {
+    height: 100%;
+    align-self: flex-start;
+  }
+
+  li {
+    margin: 0 0.4em;
+    a {
+      color: white;
+      i {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .imagenCabecera {
+    #navbarScroll > ul {
+      justify-content: space-around;
+    }
+  }
+  .infos {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .infoContacto,
+  .acceso {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .acceso {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    i {
+      margin: 0 0.5em;
+    }
+  }
+}
